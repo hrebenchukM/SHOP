@@ -578,22 +578,22 @@ const outputDiv = document.getElementById('productContainer');
 if (storedProductArray && storedProductArray.length > 0) {
     // Создание карточек для каждого элемента в storedProductArray
     storedProductArray.forEach(function (productData) {
-      
-        const laptop = new Laptop(
-    productData.label,
-    productData.image,
-    productData.title,
-    productData.description,
-    productData.price,
-    productData.phone,
-    productData.category
-);
+    const laptop = new Laptop(
+        productData.label,
+        productData.image,
+        productData.title,
+        productData.description,
+        productData.price,
+        productData.phone,
+        productData.category
+    );
 
-
-
-        // Создание и добавление карточки в контейнер
+    // Проверка, не удалена ли задача
+    if (!laptop.isDone) {
+       
         outputDiv.appendChild(laptop.createCard());
-    });
+    }
+});
 }
 
 

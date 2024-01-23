@@ -587,7 +587,7 @@ class Task {
 this.isDone = true;
 for (let i = 0; i < dataService.tasks.length; i++) {
     if (dataService.tasks[i] === this) {
-        dataService.tasks.splice(i, 0);
+        dataService.tasks.splice(i, 1);
         break;
     }
 }
@@ -712,10 +712,12 @@ for (let i = 0; i < dataService.tasks.length; i++) {
         showAllButton.addEventListener("click", showAllHandler);
         showNotCompletedButton.addEventListener("click", showNotCompletedHandler);
 
-        window.addEventListener("load", function () {
-            tasksListView.drawAll();
-        });
-
+            
+       window.addEventListener("load", function () {
+       dataService.open(); 
+       tasksListView.drawAll();
+       });
+    
         taskNameInput.addEventListener("keydown", function (e) {
             if (e.code == "Enter") addTaskHandler();
         })
