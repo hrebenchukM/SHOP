@@ -460,10 +460,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-         <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-              <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-         </form>
+        
+
+        <form class="d-flex" id="searchForm">
+          <input id="searchInput" class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
+          <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
+      </form>
+
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -741,7 +744,48 @@
   
     
     
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.getElementById('searchForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Минус стандартное поведение отправки формы
+
+    
+    var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+   
+    var descriptions = document.querySelectorAll('.description p');
+
+    
+    descriptions.forEach(function (description) {
+        var product = description;
+        //  поиск родительского элемента с классом 'laptop'
+        while (product && !product.classList.contains('laptop')) {
+            product = product.parentNode;
+        }
+
+        if (product && description.textContent.toLowerCase().includes(searchTerm)) {
+            product.style.display = 'flex';
+        } else if (product) {
+            product.style.display = 'none';
+        }
+    });
+});
+
         </script>
 </body>
 </html>
