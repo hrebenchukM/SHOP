@@ -169,13 +169,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
+    margin-left: 100px;
+  
 }
 
 .task {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 200px;
     background-color: #f8f9fa;
 }
 
@@ -207,11 +209,18 @@
 </head>
 <body>
 
+<aside> 
+    <img src="img/бабочка.jpg" style="width: 500px; height: 500px; position:fixed; top: 0px; right: 0; transform: translate(0, -50%);margin-top: 300px;">
+    </aside>
+
+
+
+<main >
+   
+
     <h1 style="	color: #333;
     font-size: 24px;
     margin-bottom: 20px;margin-top: 50px; margin-left: 500px;font-family: cursive; text-align: center;">Добавление объявления</h1>
-
-<img src="img/бабочка.jpg" style="width: 500px; height: 500px; position:fixed; top: 0px; right: 0; transform: translate(0, -50%);margin-top: 400px;">
 
 
 	<form style="  margin-left: 350px;margin-top: 0px;
@@ -304,108 +313,116 @@
 </div>
     
 
+</main>
 
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
-        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
-        crossorigin="anonymous"></script>
 
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container" >
-            
-            <a class="navbar-brand" href="AdsBoard.html">
-                <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
-               AD'S BOARD
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-               <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-             </form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+crossorigin="anonymous"></script>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="NewAdd.html">
-                            &#43;New ad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="RegistrAvatar.html">My profile</a>
-                        
-                        <img src="img/gentle-on-the-caress-clipart-18.jpg"
-                        width="40">
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-    </nav>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container" >
+    
+    <a class="navbar-brand" href="AdsBoard.html">
+        <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
+       AD'S BOARD
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
- 
+     <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
+       <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
+     </form>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="NewAdd.html">
+                    &#43;New ad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="RegistrAvatar.html">My profile</a>
+                
+                <img src="img/gentle-on-the-caress-clipart-18.jpg"
+                width="40">
+            </li>
+        </ul>
+    </div>
+    
+</div>
+</nav>
+
+
+
+
+<nav class="col-md-2  d-md-block bg-light ">
     <div class="categories-container">
-        <h4>Категории</h4>
      <div class="container mt-5" >
         <div class="row">
-           
-        
          
+            
+           
+                <h4 style="padding-top: 30px;font-family: cursive;">Категории</h4>
+        
                     <div class="col">
                        <li class="list-group-item">
                         <a href="index.html">	&#9829; Главная &#9829;</a></li>
                     </div>
           
-            <ul class="list-group">
+              
                     <div class="col">
-                        <li class="list-group-item"> <img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">
-                         <a href="Technica/StrTechnica.html">Техника </a></li>
+                        <li class="list-group-item"> 
+                         <a href="Technica/StrTechnica.html"><img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
                      </div>
                 
     
                 <div class="col">
-                   <li class="list-group-item"> <img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">
-                    <a href="Shoes/StrShoes.html">Обувь</a></li>
+                   <li class="list-group-item"> 
+                    <a href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></li>
                 </div>
              
             
            
              
                 <div class="col">
-                    <li class="list-group-item">   <img src="img/OIP.jpg" width="40">
-                        <a href="Cosmetics/StrCosmetics.html">Косметика</a></li>
+                    <li class="list-group-item">  
+                        <a href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
                 </div>
 
                 <div class="col">
-                    <li class="list-group-item"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">
-                        <a href="Clothes/StrClothes.html">Одежда </a></li>
+                    <li class="list-group-item">
+                        <a href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
                 </div>
                
                 <div class="col">
-                    <li class="list-group-item"><img src="img/Колечко.png" width="40">
-                             <a href="Bijouterie/StrBijouterie.html">Украшения</a></li>
+                    <li class="list-group-item">
+                                 <a href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
                      </div>
              </ul>
             
 
           
-          
+           
         </div>
       </div>
     </div>
+</nav>
+
     
 
-    <footer class="bg-light text-center py-0">
-        <div class="container" style="text-align: center; justify-content: center;padding-top: 50px;margin-left: 300px;">
+    <footer class="bg-light text-center py-0 fixed-bottom">
+        <div class="container" style="text-align: center;  justify-content:center; background-color: white; margin-left: 350px;">
             <div class="row">
               
                 <div class="col-md-8">
@@ -413,7 +430,7 @@
                         <div class="col-md-4">
                             <a href="RegistrPay.html">
                                 
-                                <p class="ml-4" style="color: gray;">Оплата</p>
+                                <p class="ml-4" style="color: gray; ">Оплата</p>
                             
                             </a>
                         </div>
@@ -492,9 +509,6 @@
         let validators = {};
 
 
-
-
-
         validators.validate = function (element, message, predicate) {
             let errorLabel = document.querySelector("#" + element.dataset.errorLabel);
             errorLabel.innerHTML = message;
@@ -538,8 +552,6 @@
 
 
 
-
-
 validators.positiveNumber = {
     isValid: function (element) {
         let message = "Введите положительное число";
@@ -554,68 +566,6 @@ validators.positiveNumber = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-   
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
@@ -728,6 +678,7 @@ class Task {
         let taskNameInput = document.querySelector("#title");
         let priceInput=document.querySelector("#price");
         let phoneInput= document.querySelector("#phone");
+        
         let addTaskButton = document.querySelector("input[type='submit']");
         let startMessage = document.querySelector("#start-message");
         let showAllButton = document.querySelector("#show-all-btn");
@@ -774,8 +725,8 @@ class Task {
             document.querySelector("#description").value,
             priceInput.value,
             phoneInput.value,
-            document.querySelector("#category").value,
-            document.querySelector("#photo").value
+             document.querySelector("#category").value,
+             document.querySelector("#photo").value
         );
 
         dataService.add(newTask);
@@ -801,11 +752,6 @@ class Task {
         alert("Форма содержит ошибки. Пожалуйста, проверьте все поля.");
     }
 }
-
-
-
-
-
 
 
 
@@ -838,6 +784,9 @@ class Task {
        
 
 
+
+
+        
 
 
  </script>
