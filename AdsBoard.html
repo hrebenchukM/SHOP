@@ -342,10 +342,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-               <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-             </form>
+            <form id="searchForm" class="d-flex">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
+                <button id="searchButton" class="btn btn-primary" type="button" style="background-color: #000;">Поиск</button>
+            </form>
+            
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -595,6 +596,53 @@ if (storedProductArray && storedProductArray.length > 0) {
     });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+searchButton.addEventListener('click', function () {
+    const searchTerm = searchInput.value.toLowerCase();
+    const storedProductArray = JSON.parse(localStorage.getItem('tasks'));
+    productContainer.innerHTML = '';
+
+    if (storedProductArray && storedProductArray.length > 0) {
+        storedProductArray.forEach(function (productData) {
+          
+            if (
+                productData.title.toLowerCase().includes(searchTerm) ||
+                productData.description.toLowerCase().includes(searchTerm)
+            ) {
+                const laptop = new Laptop(
+                    productData.label,
+                    productData.image,
+                    productData.title,
+                    productData.description,
+                    productData.price,
+                    productData.phone,
+                    productData.category
+                );
+
+                productContainer.appendChild(laptop.createCard());
+            }
+        });
+    }
+});
 
     </script>
 
