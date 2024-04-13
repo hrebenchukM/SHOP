@@ -11,13 +11,10 @@
     <link type = "text/css" rel = "stylesheet" href = "stile.css">
 </head>
     <style>
+     
      body {
             background-color: rgb(212, 211, 211);
-             display: inline-block;
-             padding: 100px;
-            margin: 0; 
-            text-align: center;
-            padding-top: 60px;
+           
         }
         
 
@@ -25,11 +22,17 @@
             color: #000;
             text-align: center;
         }
-        .list-group-item {
+      
+      
+    
+
+    
+ 
+   
+        
+ .list-group-item {
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 80px; 
         border: none;
     }
 
@@ -42,40 +45,16 @@
             color: #000;
             text-decoration: none;
         }
-
-        
-
-    .list-group-item img {
-        margin-right: 10px; 
-    }
-      
-      
-        #carouselExampleIndicators
-    {
-        margin: 30px auto; 
-        max-width: 80%; 
-    }
-
-    .carousel-inner img {
-        width: 100%; 
-        height: auto; 
-    }
-
-    .categories-container {
-            position: fixed;
-            top: 20px; 
+        .categories-container {
+            float: left;
+            top: auto; 
             left: 0;
-            width: 200px; 
+            width: 200px;
+            height: 100%;
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 10px;
-            z-index: 1000;
-            
         }
 
-
-
-       
 
 
        
@@ -83,6 +62,9 @@
             font-size: 25px; 
             color: white; 
         }
+
+
+
 
 
 
@@ -126,13 +108,13 @@
 
         .styled-links {
             display: inline-block;
-  margin-left: 470px;
+  
   border: 1px solid #ccc;
   border-bottom: none;
   text-align: center;
-  padding: 10px;
+ 
   cursor: pointer;
-  margin-top: 60px;
+
 }
 
 
@@ -159,221 +141,208 @@
 <body>
 
 
-<main>
 
+
+
+<nav class="navbar navbar-light  bg-dark justify-content-between fixed-top" style="width: 100%;  position: sticky;">
+    <a class="navbar-brand" href="AdsBoard.html" style="color: white;">
+        <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
+       AD'S BOARD
+    </a>
+    <form class="form-inline">
     
-    <h4 class="styled-links">
-        <a href="RegistrAvatar.html" style="color: #666666;" >Новый пользователь?</a>
-        <a href="RegistrNotNew.html">Уже зарегистрированы?</a>
+        <input class="form-control mr-sm-2" type="search" placeholder="Текст для поиска" aria-label="Search"
+        style="width: 300px;">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit"style="background-color: #000;">Поиск</button>
       
-    </h4>
-
-
-    <form>
-        <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Регистрация" style="width: 200px; height: 200px; margin-left: 550px; margin-top: 30px; ">
-        <span style="display: inline-block; margin-left: 310px; vertical-align: middle ;color: white; text-align: center;">
-            <h1 style="margin-left: 200px; font-family:cursive;text-align: center;">Регистрация</h1>
-            <div style="display: inline-block; margin-left: 200px;">
-
-
-           
-                <div class="form-group">
-                    <label for="name">Имя:</label><br>
-                    <input type="text"  name="name" data-val="true" data-required="Введите имя"
-                        data-pattern="^[А-Яа-яЁё\s]+$" data-error-label="nameErrorLabel">
-                    <span class="error" id="nameErrorLabel">Ошибка</span>
-                </div>
-    
-                <div class="form-group">
-                    <label for="gender">Пол:</label><br>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Мужской</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Женский</label>
-                    <span class="error" id="genderErrorLabel">Ошибка</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="age">Возраст</label>
-                    <input type="number" name="age"  data-val="true" data-required="Введите возраст"  data-pattern="^(1[8-9]|[2-9][0-9])$" data-error-label="ageErrorLabel">
-                    <span class="error" id="ageErrorLabel">Ошибка</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="country">Страна:</label><br>
-                    <select id="country" name="country">
-                        <option value="ukraine" style="color: black;">Украина</option>
-                        <option value="poland" style="color: black;">Польша</option>
-                        <option value="moldova" style="color: black;">Молдова</option>
-                    </select>
-                    <span class="error" id="countryErrorLabel">Ошибка</span>
-                </div>
-    
-
-            <div class="form-group">
-                <label>Email</label>
-                <input type="text" name="email"  data-val="true" data-required="Введите Email"
-                    data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" data-error-label="emailErrorLabel">
-                <span class="error" id="emailErrorLabel">Ошибка</span>
-            </div>
-
-
-            
-        <div class="form-group">
-            <label>Пароль</label>
-            <input type="password" name="password" data-val="true" data-required="Введите пароль" id="password"
-            data-pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  data-error-label="passwordErrorLabel">
-            <span class="error" id="passwordErrorLabel">Ошибка</span>
-        </div>
-
-
-        <div class="form-group">
-            <label>Подтверждение пароля</label>
-            <input type="password" name="passwordConfirm"  data-val="true"
-                data-required="Введите подтверждение пароля" data-confirm="password"
-                data-error-label="passwordConfirmErrorLabel">
-            <span class="error" id="passwordConfirmErrorLabel">Ошибка</span>
-        </div>
-        
-        <div class="form-group">
-            <input type="submit" value="Регистрация">
-        </div>
-
-    </div>
-    </span>
     </form>
+    <div>
+        <button class="btn btn-dark my-2 my-sm-0" type="submit"><a class="nav-link" href="NewAdd.html"style="color: white;">&#43;New ad</a></button>
 
-                  
-    </div>
-
-</main>
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container" >
-        
-        <a class="navbar-brand" href="AdsBoard.html">
-            <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
-           AD'S BOARD
+        <img src="img/gentle-on-the-caress-clipart-18.jpg"
+        width="40">
+        <a href="RegistrAvatar.html"style="color: white;">
+            My profile
         </a>
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-         <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-           <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-         </form>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="NewAdd.html">
-                        &#43;New ad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="RegistrAvatar.html">My profile</a>
-                    
-                    <img src="img/gentle-on-the-caress-clipart-18.jpg"
-                    width="40">
-                </li>
-            </ul>
-        </div>
-        
     </div>
 </nav>
 
 
-</header>
-
-<nav class="col-md-2  d-md-block bg-light position-fixed ">
 
 
-<div class="categories-container">
- <div class="container mt-5" >
-    <div class="row">
+<div class="categories-container " style="
+width: 200px; 
+background-color: #fff;
+border: 2px solid #ddd; ">
+    <div class="row ">
      
-        
-       
-            <h4 style="padding-top: 30px;font-family: cursive;">Категории</h4>
-    
-                <div class="col">
-                   <li class="list-group-item">
-                    <a href="index.html">	&#9829; Главная &#9829;</a></li>
-                </div>
-      
-          
-                <div class="col">
-                    <li class="list-group-item"> 
-                     <a href="Technica/StrTechnica.html"><img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
-                 </div>
-            
-
-            <div class="col">
-               <li class="list-group-item"> 
-                <a href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></li>
-            </div>
+        <div class="col">
+            <h4 style="font-family: cursive;">Категории</h4>
+            <li class="list-group-item">
+            <a class="ml-3"  href="index.html" > 
+                &#9829; Главная &#9829;</a></li>
          
-        
-       
-         
-            <div class="col">
-                <li class="list-group-item">  
-                    <a href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
-            </div>
-
-            <div class="col">
-                <li class="list-group-item">
-                    <a href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
-            </div>
-           
-            <div class="col">
-                <li class="list-group-item">
-                             <a href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
-                 </div>
-         </ul>
-        
-
-      
-       
+        </div>
     </div>
-  </div>
+    
+
+
+<div class="row ">
+    <div class="col">
+        <li class="list-group-item"> 
+        <a class="ml-3"href="Technica/StrTechnica.html"> 
+        <img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
+
+   </div>
+</div>
+   
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></span></li>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3"  href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+<h4 class="styled-links">
+    <a href="RegistrAvatar.html" style="color: #666666;" >Новый пользователь?</a>
+    <a href="RegistrNotNew.html">Уже зарегистрированы?</a>
+  
+</h4>
+
+
+<form>
+    <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Регистрация" style="width: 200px; height: 200px; display: flex;">
+    <span style="display: inline-block; color: white; text-align: center;">
+        <h1 style=" font-family:cursive;text-align: center;">Регистрация</h1>
+        <div style="display: inline-block; ">
+
+
+       
+            <div class="form-group">
+                <label for="name">Имя:</label><br>
+                <input type="text"  name="name" data-val="true" data-required="Введите имя"
+                    data-pattern="^[А-Яа-яЁё\s]+$" data-error-label="nameErrorLabel">
+                <span class="error" id="nameErrorLabel">Ошибка</span>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Пол:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+                <span class="error" id="genderErrorLabel">Ошибка</span>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Возраст</label>
+                <input type="number" name="age"  data-val="true" data-required="Введите возраст"  data-pattern="^(1[8-9]|[2-9][0-9])$" data-error-label="ageErrorLabel">
+                <span class="error" id="ageErrorLabel">Ошибка</span>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Страна:</label><br>
+                <select id="country" name="country">
+                    <option value="ukraine" style="color: black;">Украина</option>
+                    <option value="poland" style="color: black;">Польша</option>
+                    <option value="moldova" style="color: black;">Молдова</option>
+                </select>
+                <span class="error" id="countryErrorLabel">Ошибка</span>
+            </div>
+
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email"  data-val="true" data-required="Введите Email"
+                data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" data-error-label="emailErrorLabel">
+            <span class="error" id="emailErrorLabel">Ошибка</span>
+        </div>
+
+
+        
+    <div class="form-group">
+        <label>Пароль</label>
+        <input type="password" name="password" data-val="true" data-required="Введите пароль" id="password"
+        data-pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"  data-error-label="passwordErrorLabel">
+        <span class="error" id="passwordErrorLabel">Ошибка</span>
+    </div>
+
+
+    <div class="form-group">
+        <label>Подтверждение пароля</label>
+        <input type="password" name="passwordConfirm"  data-val="true"
+            data-required="Введите подтверждение пароля" data-confirm="password"
+            data-error-label="passwordConfirmErrorLabel">
+        <span class="error" id="passwordConfirmErrorLabel">Ошибка</span>
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="Регистрация">
+    </div>
 
 </div>
-</nav>
+</span>
+</form>
+
+              
+</div>
 
 
-<footer class="bg-light text-center py-0 fixed-bottom">
-    <div class="container" style="text-align: center;  justify-content:center; background-color: white; margin-left: 350px;">
+
+
+<footer class="bg-light text-center py-0 ">
+    <div class="container">
         <div class="row">
-          
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="RegistrPay.html">
-                            
-                            <p class="ml-4" style="color: gray; ">Оплата</p>
-                        
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                       
-                            <a href="HowBuySell.html">
-                            <p class="ml-4" style="color: gray;">Как продавать и покупать?</p>
-                         
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="HelpNumber.html">
-                       
-                            <p class="ml-4" style="color: gray; ">Техподдержка</p>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-md-3 mb-0 mt-4">
+                <img src="img/photo_2024-01-16_00-22-10.jpg" width="60">
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="RegistrPay.html">
+                    <p class="ml-3"style="color: gray; ">Оплата</p>
+                   
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HowBuySell.html">
+                    <p class="ml-3"style="color: gray; ">Как продавать и покупать?</p>
+                  
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HelpNumber.html">
+                    <p class="ml-3"style="color: gray; ">Техподдержка</p>
+                 
+                </a>
             </div>
         </div>
     </div>
+</div>
 </footer>
 
 <!--\ Подключение Bootstrap JS (необходимо для работы некоторых компонентов) -->

@@ -15,10 +15,7 @@
      
       body {
             background-color: #f8f9fa;
-            padding-top: 60px;
-            font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+           
         }
         
       
@@ -27,30 +24,7 @@
             color: #000;
             text-align: center;
         }
-        .list-group-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px; 
-        border: none;
-    }
-
-        .list-group-item:hover {
-            background-color: #c3c5c7;
-            color: white;
-        }
-
-        .list-group-item a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        
-
-    .list-group-item img {
-        margin-right: 10px; 
-    }
-      
+    
       
         #carouselExampleIndicators
     {
@@ -64,16 +38,29 @@
     }
 
     
-    .categories-container {
-            position: fixed;
-            top: 20px; 
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+
+        .list-group-item:hover {
+            background-color: #c3c5c7;
+            color: white;
+        }
+
+        .list-group-item a {
+            color: #000;
+            text-decoration: none;
+        }
+        .categories-container {
+            float: left;
+            top: auto; 
             left: 0;
-            width: 200px; 
+            width: 200px;
+            height: 100%;
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 10px;
-            z-index: 1000;
-            
         }
 
 
@@ -163,113 +150,7 @@
     </style>
 </head>
 <body>
-    
-<main>
-  <form style="margin-top: 100px;">
-
-  
-
-<div class="user-data">
-  <h2>Step 1: Your details:</h2>
-    <div class="form-group">
-      <label for="name">Имя:</label><br>
-      <input type="text" id="name" name="name" data-val="true" data-required="Введите имя"
-          data-pattern="^[А-Яа-яЁё\s]+$" data-error-label="nameErrorLabel">
-      <span class="error" id="nameErrorLabel">Ошибка</span>
-  </div>
-</div>
-
-<div class="form-group">
-  <label for="phone">Телефон:</label><br>
-  <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8901"
-      pattern="\+\d-\d{3}-\d{3}-\d{4}" data-val="true" data-required="Введите телефон"
-      data-error-label="phoneErrorLabel">
-  <span class="error" id="phoneErrorLabel">Ошибка</span>
-</div>
-
-
-
-
-
-
-
-<div class="delivery-address">
-
-<h2>Step 2: Delivery address:</h2>
-  <div class="form-group">
-      <label for="address">Address:</label><br>
-      <input type="text" id="address" name="address" data-val="true" data-required="Введите адрес"
-          data-error-label="addressErrorLabel">
-      <span class="error" id="addressErrorLabel">Ошибка</span>
-  </div>
-
-  <div class="form-group">
-      <label for="postcode">Post code:</label><br>
-      <input type="text" id="postcode" name="postcode" data-val="true" data-required="Введите почтовый индекс"
-          data-error-label="postcodeErrorLabel">
-      <span class="error" id="postcodeErrorLabel">Ошибка</span>
-  </div>
-
-  <div class="form-group">
-      <label for="country">Country:</label><br>
-      <input type="text" id="country" name="country" data-val="true" data-required="Введите страну"
-          data-error-label="countryErrorLabel">
-      <span class="error" id="countryErrorLabel">Ошибка</span>
-  </div>
-</div>
-
-
-
-<div class="payment-info">
-  
-<h2>Step 3: Payment information:</h2>
-
-    <div class="form-group">
-      <label>Номер кредитной карты</label>
-      <input type="text" name="creditCard" data-val="true"
-          data-required="Введите номер кредитной карты" data-pattern="^\d{4} \d{4} \d{4} \d{4}$"
-          data-error-label="creditCardErrorLabel">
-      <span class="error" id="creditCardErrorLabel">Ошибка</span>
-  </div>
-
-    <div class="form-group">
-      <label for="card-type">Card type:</label><br>
-      <input type="radio" name="card-type" id="visa"> VISA
-      <input type="radio" name="card-type" id="amex"> AmEx
-      <input type="radio" name="card-type" id="mastercard"> Mastercard
-  </div>
-
-  <div class="form-group">
-      <label for="security-code">Security code:</label><br>
-      <input type="text" id="security-code" name="security-code" data-val="true"
-          data-required="Введите код безопасности" data-error-label="securityCodeErrorLabel">
-      <span class="error" id="securityCodeErrorLabel">Ошибка</span>
-  </div>
-
-  <div class="form-group">
-      <label for="name-on-card">Name on card:</label><br>
-      <input type="text" id="name-on-card" name="name-on-card" placeholder="Exact name as on the card"
-          data-val="true" data-required="Введите имя на карте" data-error-label="nameOnCardErrorLabel">
-      <span class="error" id="nameOnCardErrorLabel">Ошибка</span>
-  </div>
-</div>
-
-
-    <div class="form-group">
-      
-      <button class="btn btn-primary" type="submit" style="background-color: #000;">BUY IT!</button>
    
-      
-    </div>
-    
-</form>
-
-
-
-
-    
-
-</main>
 
 
 
@@ -279,128 +160,225 @@
 
 
 
-
-
-
-<header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container" >
-    
-    <a class="navbar-brand" href="AdsBoard.html">
+<nav class="navbar navbar-light  bg-dark justify-content-between fixed-top" style="width: 100%;  position: sticky;">
+    <a class="navbar-brand" href="AdsBoard.html" style="color: white;">
         <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
        AD'S BOARD
     </a>
+    <form class="form-inline">
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Текст для поиска" aria-label="Search"
+        style="width: 300px;">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit"style="background-color: #000;">Поиск</button>
+      
+    </form>
+    <div>
+        <button class="btn btn-dark my-2 my-sm-0" type="submit"><a class="nav-link" href="NewAdd.html"style="color: white;">&#43;New ad</a></button>
 
-     <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-       <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-     </form>
+        <img src="img/gentle-on-the-caress-clipart-18.jpg"
+        width="40">
+        <a href="RegistrAvatar.html"style="color: white;">
+            My profile
+        </a>
+        
+    </div>
+</nav>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="NewAdd.html">
-                    &#43;New ad</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="RegistrAvatar.html">My profile</a>
-                
-                <img src="img/gentle-on-the-caress-clipart-18.jpg"
-                width="40">
-            </li>
-        </ul>
+
+
+
+<div class="categories-container " style="
+width: 200px; 
+background-color: #fff;
+border: 2px solid #ddd; ">
+    <div class="row ">
+     
+        <div class="col">
+            <h4 style="font-family: cursive;">Категории</h4>
+            <li class="list-group-item">
+            <a class="ml-3"  href="index.html" > 
+                &#9829; Главная &#9829;</a></li>
+         
+        </div>
     </div>
     
+
+
+<div class="row ">
+    <div class="col">
+        <li class="list-group-item"> 
+        <a class="ml-3"href="Technica/StrTechnica.html"> 
+        <img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
+
+   </div>
 </div>
-</nav>
-
-
-</header>
-
-<nav class="col-md-2  d-md-block bg-light ">
-<div class="categories-container">
-<div class="container mt-5" >
-<div class="row">
- 
-    
    
-        <h4 style="padding-top: 30px;font-family: cursive;">Категории</h4>
-
-            <div class="col">
-               <li class="list-group-item">
-                <a href="index.html">	&#9829; Главная &#9829;</a></li>
-            </div>
-  
-      
-            <div class="col">
-                <li class="list-group-item"> 
-                 <a href="Technica/StrTechnica.html"><img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
-             </div>
-        
-
-        <div class="col">
-           <li class="list-group-item"> 
-            <a href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></li>
-        </div>
-     
-    
-   
-     
-        <div class="col">
-            <li class="list-group-item">  
-                <a href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
-        </div>
-
-        <div class="col">
-            <li class="list-group-item">
-                <a href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
-        </div>
-       
-        <div class="col">
-            <li class="list-group-item">
-                         <a href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
-             </div>
-     </ul>
-    
-
-  
-   
-</div>
-</div>
-</div>
-</nav>
-
-
-<footer class="bg-light text-center py-0 fixed-bottom">
-<div class="container" style="text-align: center;  justify-content:center; background-color: white; margin-left: 350px;">
     <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></span></li>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3"  href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+    <form style="margin-top: 100px;">
+  
+    
+  
+  <div class="user-data">
+    <h2>Step 1: Your details:</h2>
+      <div class="form-group">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" data-val="true" data-required="Введите имя"
+            data-pattern="^[А-Яа-яЁё\s]+$" data-error-label="nameErrorLabel">
+        <span class="error" id="nameErrorLabel">Ошибка</span>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="phone">Телефон:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8901"
+        pattern="\+\d-\d{3}-\d{3}-\d{4}" data-val="true" data-required="Введите телефон"
+        data-error-label="phoneErrorLabel">
+    <span class="error" id="phoneErrorLabel">Ошибка</span>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="delivery-address">
+  
+  <h2>Step 2: Delivery address:</h2>
+    <div class="form-group">
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" data-val="true" data-required="Введите адрес"
+            data-error-label="addressErrorLabel">
+        <span class="error" id="addressErrorLabel">Ошибка</span>
+    </div>
+  
+    <div class="form-group">
+        <label for="postcode">Post code:</label><br>
+        <input type="text" id="postcode" name="postcode" data-val="true" data-required="Введите почтовый индекс"
+            data-error-label="postcodeErrorLabel">
+        <span class="error" id="postcodeErrorLabel">Ошибка</span>
+    </div>
+  
+    <div class="form-group">
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" data-val="true" data-required="Введите страну"
+            data-error-label="countryErrorLabel">
+        <span class="error" id="countryErrorLabel">Ошибка</span>
+    </div>
+  </div>
+  
+  
+  
+  <div class="payment-info">
+    
+  <h2>Step 3: Payment information:</h2>
+  
+      <div class="form-group">
+        <label>Номер кредитной карты</label>
+        <input type="text" name="creditCard" data-val="true"
+            data-required="Введите номер кредитной карты" data-pattern="^\d{4} \d{4} \d{4} \d{4}$"
+            data-error-label="creditCardErrorLabel">
+        <span class="error" id="creditCardErrorLabel">Ошибка</span>
+    </div>
+  
+      <div class="form-group">
+        <label for="card-type">Card type:</label><br>
+        <input type="radio" name="card-type" id="visa"> VISA
+        <input type="radio" name="card-type" id="amex"> AmEx
+        <input type="radio" name="card-type" id="mastercard"> Mastercard
+    </div>
+  
+    <div class="form-group">
+        <label for="security-code">Security code:</label><br>
+        <input type="text" id="security-code" name="security-code" data-val="true"
+            data-required="Введите код безопасности" data-error-label="securityCodeErrorLabel">
+        <span class="error" id="securityCodeErrorLabel">Ошибка</span>
+    </div>
+  
+    <div class="form-group">
+        <label for="name-on-card">Name on card:</label><br>
+        <input type="text" id="name-on-card" name="name-on-card" placeholder="Exact name as on the card"
+            data-val="true" data-required="Введите имя на карте" data-error-label="nameOnCardErrorLabel">
+        <span class="error" id="nameOnCardErrorLabel">Ошибка</span>
+    </div>
+  </div>
+  
+  
+      <div class="form-group">
+        
+        <button class="btn btn-primary" type="submit" style="background-color: #000;">BUY IT!</button>
+     
+        
+      </div>
       
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="RegistrPay.html">
-                        
-                        <p class="ml-4" style="color: gray; ">Оплата</p>
-                    
-                    </a>
-                </div>
-                <div class="col-md-4">
+  </form>
+  
+  
+  
+  
+      
+  
+
+  
+  
+
+
+
+       
+<footer class="bg-light text-center py-0 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-0 mt-4">
+                <img src="img/photo_2024-01-16_00-22-10.jpg" width="60">
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="RegistrPay.html">
+                    <p class="ml-3"style="color: gray; ">Оплата</p>
                    
-                        <a href="HowBuySell.html">
-                        <p class="ml-4" style="color: gray;">Как продавать и покупать?</p>
-                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="HelpNumber.html">
-                   
-                        <p class="ml-4" style="color: gray; ">Техподдержка</p>
-                    </a>
-                </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HowBuySell.html">
+                    <p class="ml-3"style="color: gray; ">Как продавать и покупать?</p>
+                  
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HelpNumber.html">
+                    <p class="ml-3"style="color: gray; ">Техподдержка</p>
+                 
+                </a>
             </div>
         </div>
     </div>

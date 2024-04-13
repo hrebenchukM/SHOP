@@ -12,74 +12,35 @@
 </head>
     <style>
       
-        body {
-            background-color: rgb(212, 211, 211);
-             display: inline-block;
-             padding: 100px;
-            margin: 0; 
-            justify-content: center;
-            padding-top: 60px;
+      body {
+            background-color:white;
+          
         }
         
-
-        h4 {
-            color: #000;
-            text-align: center;
-            justify-content: center;
-        }
-        .list-group-item {
+ .list-group-item {
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 80px; 
         border: none;
-        justify-content: center;
     }
 
         .list-group-item:hover {
             background-color: #c3c5c7;
             color: white;
-            justify-content: center;
         }
 
         .list-group-item a {
             color: #000;
             text-decoration: none;
-            justify-content: center;
         }
-
-        
-
-    .list-group-item img {
-        margin-right: 10px; 
-        justify-content: center;
-    }
-      
-      
-        #carouselExampleIndicators
-    {
-        margin: 30px auto; 
-        max-width: 80%; 
-    }
-
-    .carousel-inner img {
-        width: 100%; 
-        height: auto; 
-    }
-
-    
-    .categories-container {
-            position: fixed;
-            top: 20px; 
+        .categories-container {
+            float: left;
+            top: auto; 
             left: 0;
-            width: 200px; 
+            width: 200px;
+            height: 100%;
             background-color: #fff;
             border: 1px solid #ddd;
-            padding: 10px;
-            z-index: 1000;
-            justify-content: center;
         }
-       
 
 
        
@@ -98,14 +59,11 @@
 
 
         .styled-links {
-            display: inline-block;
-  margin-left: 470px;
+        display: inline-block;
   border: 1px solid #ccc;
   border-bottom: none;
   justify-content: center;
-  padding: 10px;
-  cursor: pointer;
-  margin-top: 60px;
+ 
 }
 
 
@@ -132,244 +90,229 @@
 <body>
   
 
-<main>
-   
-    <h4 class="styled-links">
-        <a href="HowBuySell.html">Как покупать?</a>
-        <a href="HowSell.html"style="color: #666666;">Как продавать?</a>
-      
-    </h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <nav class="navbar navbar-light  bg-dark justify-content-between fixed-top" style="width: 100%;  position: sticky;">
+        <a class="navbar-brand" href="AdsBoard.html" style="color: white;">
+            <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
+           AD'S BOARD
+        </a>
+        <form class="form-inline">
+        
+            <input class="form-control mr-sm-2" type="search" placeholder="Текст для поиска" aria-label="Search"
+            style="width: 300px;">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit"style="background-color: #000;">Поиск</button>
+          
+        </form>
+        <div>
+            <button class="btn btn-dark my-2 my-sm-0" type="submit"><a class="nav-link" href="NewAdd.html"style="color: white;">&#43;New ad</a></button>
+
+            <img src="img/gentle-on-the-caress-clipart-18.jpg"
+            width="40">
+            <a href="RegistrAvatar.html"style="color: white;">
+                My profile
+            </a>
+            
+        </div>
+    </nav>
+
+
+
+
+    <div class="categories-container " style="
+    width: 200px; 
+    background-color: #fff;
+    border: 2px solid #ddd; ">
+        <div class="row ">
+         
+            <div class="col">
+                <h4 style="font-family: cursive;">Категории</h4>
+                <li class="list-group-item">
+                <a class="ml-3"  href="index.html" > 
+                    &#9829; Главная &#9829;</a></li>
+             
+            </div>
+        </div>
         
 
 
+    <div class="row ">
+        <div class="col">
+            <li class="list-group-item"> 
+            <a class="ml-3"href="Technica/StrTechnica.html"> 
+            <img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
 
+       </div>
+    </div>
+       
+        <div class="row">
+            <div class="col">
+                <li class="list-group-item">
+                <a class="ml-3" href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></span></li>
 
-
-
-
-
-
-
-
-    <div class="container mt-5">
-        <div class="row" style="margin-left:150px ;">
-            <h1 style="color: #000; text-align: center; margin-top: 30px; font-family:cursive;">Публикуйте объявления о продаже и заключайте успешные сделки  </h1>
-            <div class="col-md-3" style="margin-top: 30px;">
-                
-                <div class="card subscription-plan">
-                    
-                    <div class="card-body">
-                        
-                        <h5 class="card-title">  Сфотографируйте товар </h5>
-                        
-                        <div class="card-text">
-                            <p><img src="img/book-camera-logo-design-vector-illustration_685330-678.jpg" style="width: 100px;height: 90px; margin-left: 35px;"></p>
-                            <p>
-                                Читайте, как разместить объявление,
-                                Узнайте, зачем и как добавлять фотографии
-                                Продавайте еще быстрее</p>
-
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="col-md-3" style="margin-top: 30px;">
-                <div class="card subscription-plan">
-                    <div class="card-body">
-                        <h5 class="card-title">Опубликуйте объявление</h5>
-
-                        <div class="card-text">
-                           
-                            <p><img src="img/diamond-circle-vector-concept-icon-thin-line-style-symbol-158468235.webp" style="width: 100px;height: 100px; margin-left: 35px;"></p>
-                       
-                            <p> 
-                                После добавления подробного описания и публикации объявления вам останется только дождаться отзывов клиентов.
-                               </p>
-                        </div>
-        
-                    
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <li class="list-group-item">
+                <a class="ml-3" href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
             </div>
-            <div class="col-md-3" style="margin-top: 30px;">
-                <div class="card subscription-plan">
-                    <div class="card-body">
-                        <h5 class="card-title">Общайтесь с клиентами</h5>
-
-
-                        <div class="card-text">
-                            <p><img src="img/pngtree-cartoon-info-icon-image_1145513.jpg" style="width: 50px;height: 50px; margin-left: 35px;"></p>
-                          
-                           <p>Отвечайте на вопросы покупателей, предоставляйте им дополнительную информацию о товаре и договаривайтесь о цене.</p>
-                        </div>
-                       </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <li class="list-group-item">
+                <a class="ml-3"  href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
             </div>
-            <div class="col-md-3" style="margin-top: 30px;">
-                <div class="card subscription-plan">
-                    <div class="card-body">
-                        <h5 class="card-title"> Продавайте товары с доставкой!</h5>
-                        <div class="card-text">
-                            <p><img src="img/handshake-g3bcedf022_640.jpg" style="width: 80px;height: 80px; margin-left: 35px;"></p>
-                         
-                            <p>Используйте OLX Доставку для продажи товаров или организуйте личную встречу с покупателем в общественном месте.</p>
-                        </div>
-                   </div>
-                </div>
+        </div>
+        <div class="row">
+
+            <div class="col">
+                <li class="list-group-item">
+                <a class="ml-3" href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
             </div>
         </div>
     </div>
-
-     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    
-      <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container" >
-          
-          <a class="navbar-brand" href="AdsBoard.html">
-              <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
-             AD'S BOARD
-          </a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-           <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
-             <button class="btn btn-primary" type="submit" style="background-color: #000;">Поиск</button>
-           </form>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="NewAdd.html">
-                          &#43;New ad</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="RegistrAvatar.html">My profile</a>
-                      
-                      <img src="img/gentle-on-the-caress-clipart-18.jpg"
-                      width="40">
-                  </li>
-              </ul>
-          </div>
-          
-      </div>
-  </nav>
-
-
-</header>
-
-<nav class="col-md-2  d-md-block bg-light ">
-  <div class="categories-container">
-   <div class="container mt-5" >
-      <div class="row">
-       
-          
-         
-              <h4 style="padding-top: 30px;font-family: cursive;">Категории</h4>
-      
-                  <div class="col">
-                     <li class="list-group-item">
-                      <a href="index.html">	&#9829; Главная &#9829;</a></li>
-                  </div>
-        
-            
-                  <div class="col">
-                      <li class="list-group-item"> 
-                       <a href="Technica/StrTechnica.html"><img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
-                   </div>
-              
   
-              <div class="col">
-                 <li class="list-group-item"> 
-                  <a href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></li>
-              </div>
-           
+ 
+
+
+    <main>
+   
+        <h4 class="styled-links">
+            <a href="HowBuySell.html">Как покупать?</a>
+            <a href="HowSell.html"style="color: #666666;">Как продавать?</a>
           
-         
-           
-              <div class="col">
-                  <li class="list-group-item">  
-                      <a href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
-              </div>
-
-              <div class="col">
-                  <li class="list-group-item">
-                      <a href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
-              </div>
-             
-              <div class="col">
-                  <li class="list-group-item">
-                               <a href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
-                   </div>
-           </ul>
-          
-
-        
-         
-      </div>
-    </div>
-  </div>
-</nav>
-
-  
-  <footer class="bg-light text-center py-0 fixed-bottom">
-      <div class="container" style="text-align: center;  justify-content:center; background-color: white; margin-left: 350px;">
-          <div class="row">
+        </h4>
             
-              <div class="col-md-8">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <a href="RegistrPay.html">
-                              
-                              <p class="ml-4" style="color: gray; ">Оплата</p>
-                          
-                          </a>
-                      </div>
-                      <div class="col-md-4">
-                         
-                              <a href="HowBuySell.html">
-                              <p class="ml-4" style="color: gray;">Как продавать и покупать?</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="container mt-5">
+            <div class="row">
+                <h1 style="color: #000; text-align: center; margin-top: 30px; font-family:cursive;">Публикуйте объявления о продаже и заключайте успешные сделки  </h1>
+                <div class="col-md-3" style="margin-top: 30px;">
+                    
+                    <div class="card subscription-plan">
+                        
+                        <div class="card-body">
+                            
+                            <h5 class="card-title">  Сфотографируйте товар </h5>
+                            
+                            <div class="card-text">
+                                <p><img src="img/book-camera-logo-design-vector-illustration_685330-678.jpg" style="width: 100px;height: 90px; margin-left: 35px;"></p>
+                                <p>
+                                    Читайте, как разместить объявление,
+                                    Узнайте, зачем и как добавлять фотографии
+                                    Продавайте еще быстрее</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-top: 30px;">
+                    <div class="card subscription-plan">
+                        <div class="card-body">
+                            <h5 class="card-title">Опубликуйте объявление</h5>
+    
+                            <div class="card-text">
+                               
+                                <p><img src="img/diamond-circle-vector-concept-icon-thin-line-style-symbol-158468235.webp" style="width: 100px;height: 100px; margin-left: 35px;"></p>
                            
-                          </a>
-                      </div>
-                      <div class="col-md-4">
-                          <a href="HelpNumber.html">
-                         
-                              <p class="ml-4" style="color: gray; ">Техподдержка</p>
-                          </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
-
+                                <p> 
+                                    После добавления подробного описания и публикации объявления вам останется только дождаться отзывов клиентов.
+                                   </p>
+                            </div>
+            
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-top: 30px;">
+                    <div class="card subscription-plan">
+                        <div class="card-body">
+                            <h5 class="card-title">Общайтесь с клиентами</h5>
+    
+    
+                            <div class="card-text">
+                                <p><img src="img/pngtree-cartoon-info-icon-image_1145513.jpg" style="width: 50px;height: 50px; margin-left: 35px;"></p>
+                              
+                               <p>Отвечайте на вопросы покупателей, предоставляйте им дополнительную информацию о товаре и договаривайтесь о цене.</p>
+                            </div>
+                           </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-top: 30px;">
+                    <div class="card subscription-plan">
+                        <div class="card-body">
+                            <h5 class="card-title"> Продавайте товары с доставкой!</h5>
+                            <div class="card-text">
+                                <p><img src="img/handshake-g3bcedf022_640.jpg" style="width: 80px;height: 80px; margin-left: 35px;"></p>
+                             
+                                <p>Используйте OLX Доставку для продажи товаров или организуйте личную встречу с покупателем в общественном месте.</p>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+         </main>
+   
+  
+<footer class="bg-light text-center py-0 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-0 mt-4">
+                <img src="img/photo_2024-01-16_00-22-10.jpg" width="60">
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="RegistrPay.html">
+                    <p class="ml-3"style="color: gray; ">Оплата</p>
+                   
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HowBuySell.html">
+                    <p class="ml-3"style="color: gray; ">Как продавать и покупать?</p>
+                  
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HelpNumber.html">
+                    <p class="ml-3"style="color: gray; ">Техподдержка</p>
+                 
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
 
     <!--\ Подключение Bootstrap JS (необходимо для работы некоторых компонентов) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
