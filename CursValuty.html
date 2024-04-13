@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объявления</title>
+     <!-- Подключение Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link type = "text/css" rel = "stylesheet" href = "stile.css">
+</head>
+    <style>
+      
+     
+      body {
+            background-color: #f8f9fa;
+           
+        }
+        
+      
+
+        h4 {
+            color: #000;
+            text-align: center;
+        }
+    
+      
+        #carouselExampleIndicators
+    {
+        margin: 30px auto; 
+        max-width: 80%; 
+    }
+
+    .carousel-inner img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    
+    .list-group-item {
+        display: flex;
+        align-items: center;
+        border: none;
+    }
+
+        .list-group-item:hover {
+            background-color: #c3c5c7;
+            color: white;
+        }
+
+        .list-group-item a {
+            color: #000;
+            text-decoration: none;
+        }
+        .categories-container {
+            float: left;
+            top: auto; 
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+        h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+
+
+
+
+
+
+
+        .weather-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+       
+        padding: 20px;
+        text-align: center;
+        margin: 20px;
+       
+    }
+
+
+    #weather {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+   
+
+
+
+
+
+
+
+<nav class="navbar navbar-light  bg-dark justify-content-between fixed-top" style="width: 100%;  position: sticky;">
+    <a class="navbar-brand" href="AdsBoard.html" style="color: white;">
+        <img src="img/photo_2024-01-16_00-22-10.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top">
+       AD'S BOARD
+    </a>
+    <form class="form-inline">
+    
+        <input class="form-control mr-sm-2" type="search" placeholder="Текст для поиска" aria-label="Search"
+        style="width: 300px;">
+    <button class="btn btn-primary my-2 my-sm-0" type="submit"style="background-color: #000;">Поиск</button>
+      
+    </form>
+    <div>
+        <button class="btn btn-dark my-2 my-sm-0" type="submit"><a class="nav-link" href="NewAdd.html"style="color: white;">&#43;New ad</a></button>
+
+        <img src="img/gentle-on-the-caress-clipart-18.jpg"
+        width="40">
+        <a href="RegistrAvatar.html"style="color: white;">
+            My profile
+        </a>
+        
+    </div>
+</nav>
+
+
+
+
+<div class="categories-container " style="
+width: 200px; 
+background-color: #fff;
+border: 2px solid #ddd; ">
+    <div class="row ">
+     
+        <div class="col">
+            <h4 style="font-family: cursive;">Категории</h4>
+            <li class="list-group-item">
+            <a class="ml-3"  href="index.html" > 
+                &#9829; Главная &#9829;</a></li>
+         
+        </div>
+    </div>
+    
+
+
+<div class="row ">
+    <div class="col">
+        <li class="list-group-item"> 
+        <a class="ml-3"href="Technica/StrTechnica.html"> 
+        <img src="img/pngtree-vector-laptop-icon-png-image_4151211.jpg" width="40">Техника</a></li>
+
+   </div>
+</div>
+   
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Shoes/StrShoes.html"><img src="img/png-clipart-organic-food-computer-icons-resource-shared-resource-food-monochrome.png" width="40">Обувь</a></span></li>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Cosmetics/StrCosmetics.html"> <img src="img/OIP.jpg" width="40">Косметика</a></li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3"  href="Clothes/StrClothes.html"> <img src="img/photo_2023-12-08_05-52-57.jpg" width="40">Одежда</a></li>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <li class="list-group-item">
+            <a class="ml-3" href="Bijouterie/StrBijouterie.html"><img src="img/Колечко.png" width="40">Украшения</a></li>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+  
+  
+  
+<div class="weather-card">
+    <h1>Курс валют - <span id="city"> </span></h1>
+    <label for="cityInput">Введите код валюты: </label>
+    <input type="text" id="cityInput" placeholder="USD">
+    <label for="dateInput">Введите дату (в формате ГГГГММДД): </label>
+    <input type="text" id="dateInput" placeholder="20240412">
+    <button onclick="getCurrency()">Получить курс валюты</button>
+    <div id="weather"></div>
+  
+</div>
+  
+
+  
+  
+
+
+
+       
+<footer class="bg-light text-center py-0 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-0 mt-4">
+                <img src="img/photo_2024-01-16_00-22-10.jpg" width="60">
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="RegistrPay.html">
+                    <p class="ml-3"style="color: gray; ">Оплата</p>
+                   
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HowBuySell.html">
+                    <p class="ml-3"style="color: gray; ">Как продавать и покупать?</p>
+                  
+                </a>
+            </div>
+            <div class="col-md-3 mb-0 mt-3">
+                <a href="HelpNumber.html">
+                    <p class="ml-3"style="color: gray; ">Техподдержка</p>
+                 
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    <!--\ Подключение Bootstrap JS (необходимо для работы некоторых компонентов) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+    
+    <script>
+        function getCurrency() {
+            const inputCode = document.getElementById('cityInput').value || 'USD';
+            const inputData = document.getElementById('dateInput').value || '20240412';
+
+            const cityElement = document.getElementById('city');
+            const weatherElement = document.getElementById('weather');
+          
+            
+            const url = `https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?valcode=${inputCode}&date=${inputData}&json`;
+
+            fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    cityElement.innerHTML = `${inputCode}`;
+                    const rate = data[0].rate;
+
+                    weatherElement.innerHTML = `Курс: ${rate}`;
+                    // Дополнительная информация
+                    const currency = data[0].cc;
+                    const exchangedate = data[0].exchangedate;
+
+                    additionalInfo.innerHTML = `Код валюты: ${currency}<br>Дата: ${exchangedate}`;
+
+                })
+                .catch((error) => {
+                    console.error('Произошла ошибка:', error);
+                });
+        };
+
+        // Запуск запроса при загрузке страницы
+        window.addEventListener('DOMContentLoaded', (event) => {
+            getCurrency();
+        });
+    </script>
+</body>
+</html>

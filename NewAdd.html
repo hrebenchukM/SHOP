@@ -569,15 +569,14 @@ class Task {
             }
 
             delete() {
-this.isDone = true;
-for (let i = 0; i < dataService.tasks.length; i++) {
-    if (dataService.tasks[i] === this) {
-        dataService.tasks.splice(i, 1);
-        break;
-    }
-}
-}
-
+            this.isDone = true;
+            for (let i = 0; i < dataService.tasks.length; i++) {
+            if (dataService.tasks[i] === this) {
+             dataService.tasks.splice(i, 1);
+             break;
+            }
+             }
+         }
         }
 
         let dataService = {
@@ -603,9 +602,12 @@ for (let i = 0; i < dataService.tasks.length; i++) {
             open() {
                 this.tasks = JSON.parse(localStorage.getItem("tasks")) || [];
             }
+            
+          
         
         }
 
+        
         class TasksListView {
             element;
 
@@ -672,8 +674,10 @@ for (let i = 0; i < dataService.tasks.length; i++) {
   
 
                 let deleteButton = document.createElement("button");
+                
     deleteButton.textContent = "Удалить";
     deleteButton.addEventListener("click", () => deleteTaskHandler(this.task));
+    
     this.div.appendChild(deleteButton);
 
                 element.append(this.div);
@@ -771,6 +775,7 @@ taskNameInput.value = "";
 task.delete();
 dataService.save();
 tasksListView.drawAll();
+
 }
 
 
