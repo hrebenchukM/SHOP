@@ -255,8 +255,8 @@
       
 <div class="form-group">
     <label for="phone">Телефон:</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8901"
-        pattern="\+\d-\d{3}-\d{3}-\d{4}" data-val="true" data-required="Введите телефон"
+    <input type="tel" id="phone" name="phone" placeholder="+38-099-54-102-72"
+        pattern="\+\d{2}-\d{3}-\d{2}-\d{3}-\d{2}" data-val="true" data-required="Введите телефон"
         data-error-label="phoneErrorLabel">
     <span class="error" id="phoneErrorLabel">Ошибка</span>
   </div>
@@ -567,11 +567,12 @@ class Task {
                 this.photo = photo;
                 this.isDone = false;
             }
-
+ 
             delete() {
             this.isDone = true;
             for (let i = 0; i < dataService.tasks.length; i++) {
-            if (dataService.tasks[i] === this) {
+            if (dataService.tasks[i] == this) {
+                
              dataService.tasks.splice(i, 1);
              break;
             }
@@ -674,11 +675,10 @@ class Task {
   
 
                 let deleteButton = document.createElement("button");
-                
-    deleteButton.textContent = "Удалить";
-    deleteButton.addEventListener("click", () => deleteTaskHandler(this.task));
+                deleteButton.textContent = "Удалить";
+                deleteButton.addEventListener("click", () => deleteTaskHandler(this.task));
     
-    this.div.appendChild(deleteButton);
+                this.div.appendChild(deleteButton);
 
                 element.append(this.div);
             }
@@ -775,6 +775,7 @@ taskNameInput.value = "";
 task.delete();
 dataService.save();
 tasksListView.drawAll();
+
 
 }
 
